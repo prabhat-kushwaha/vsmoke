@@ -7,8 +7,6 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun VsmokeTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
-
-
     MaterialTheme(
         content = content
     )
