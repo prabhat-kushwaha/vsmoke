@@ -1,0 +1,30 @@
+plugins {
+    id("vsmoke.android.application")
+    id("vsmoke.android.application.compose")
+}
+android {
+    namespace 'com.prabhatkushwaha.vsmoke'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.prabhatkushwaha.vsmoke"
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+}
+
+dependencies {
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.lifecycle.runtimeCompose)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.material3)
+
+
+}
